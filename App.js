@@ -1,43 +1,34 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, SafeAreaView,Image } from 'react-native';
+import { StyleSheet, Text,Button, View, SafeAreaView,Image,TouchableOpacity } from 'react-native';
+import WelcomeScreen from './app/screens/WelcomeScreen';
 
 export default function App() {
-console.log('App Executed!!!')
-
-const handlePress =()=> console.log("liNK PRESSED") //onpress when big functions
-
-  return (
-    <SafeAreaView style={styles.container}>
-
-      <Text onPress={handlePress}>hello world!</Text>
-      <Text onPress={()=>console.log('Congrats')}>This is my first react native app</Text>
-
-      <Image 
-      style={styles.myimage}
-      source={require('./assets/my.png')}/>
-
-      <StatusBar style="auto" />
-
-      {/* <View>
-        <Text>Hello this is new view</Text>
-      </View> */}
-    </SafeAreaView>
+  return (<WelcomeScreen/>)
     
-  );
+    
+    
+  
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'white',
-    justifyContent:'center',
-    alignItems: 'center',
+  
+    // justifyContent:'center',
+    // alignItems: 'center',
 
     
   },
 
-  myimage:{
-    width:'20%',
-    height:'10%',
-  }
-});
+  // myimage:{
+  //   alignContent:'flex-end',
+  //   width:100,
+  //   height:100,
+  // },
+
+  // myview:{
+  //   width:100,
+  //   height:40,
+  //   backgroundColor:'red',
+  //   alignItems:'center',
+  //   justifyContent:'center'
+  // }
+);
