@@ -12,7 +12,7 @@ function WelcomeScreen(props) {
     return (
         <ImageBackground style={styles.background} source={require('../assets/back.png')}>
 
-            <View style={{alignItems:'center',top:600}}>
+            <View style={{alignItems:'center',top:'75%'}}>
                 <Text style={styles.text}>Cook Like a Chef</Text>
                 {/* added the background image with texts for getting started screens */}
 
@@ -36,15 +36,16 @@ const styles = StyleSheet.create({
         color:'white',
         justifyContent: 'center',
         alignContent: 'center',
-        fontSize:'35px',
+        fontSize:35,
         fontWeight:'bold',
-        top:-20
+        top:-40
     },
 
     para:{
         color:'white',
-        fontSize:'12px',
-        padding:30,
+        fontSize:12,
+        paddingHorizontal:70,
+        paddingBottom:40,
         textAlign:'center',
         top:-20
     },
