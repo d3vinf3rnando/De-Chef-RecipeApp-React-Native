@@ -21,6 +21,8 @@ function WelcomeScreen(props) {
                 recipes at home</Text>
 
                 <AppButton></AppButton>
+
+                {/*add navigation view */}
                 
             </View>
         </ImageBackground>
