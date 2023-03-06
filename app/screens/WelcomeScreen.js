@@ -1,6 +1,8 @@
 import React from 'react';
 import { ImageBackground ,StyleSheet,View,Text,Button,TouchableOpacity} from 'react-native';
 
+//this is a comment
+
 
 
 const AppButton = ({ onPress, title }) => (
