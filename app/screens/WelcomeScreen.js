@@ -6,7 +6,7 @@ import { ImageBackground ,StyleSheet,View,Text,Button,TouchableOpacity} from 're
 
 
 const AppButton = ({ onPress, title }) => (
-    <TouchableOpacity onPress={onPress} style={styles.appButtonContainer}>
+    <TouchableOpacity onPress={() => console.log('button clicked')} style={styles.appButtonContainer}>
       <Text style={styles.appButtonText}>Get Started</Text>
     </TouchableOpacity>
   );
@@ -14,7 +14,7 @@ function WelcomeScreen(props) {
     return (
         <ImageBackground style={styles.background} source={require('../assets/back.png')}>
 
-            <View style={{alignItems:'center',top:'75%'}}>
+            <View id='userNa' style={{alignItems:'center',top:'75%'}}>
                 <Text style={styles.text}>Cook Like a Chef</Text>
                 {/* added the background image with texts for getting started screens */}
 

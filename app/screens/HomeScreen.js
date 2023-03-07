@@ -4,7 +4,7 @@ import { ImageBackground ,StyleSheet,View,Text,Button,TouchableOpacity} from 're
 function HomeScreen(props) {
     return (
        <View>
-
+        <Text>This is Home</Text>
        </View>
     );
 }
