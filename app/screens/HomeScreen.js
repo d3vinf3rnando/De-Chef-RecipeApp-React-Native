@@ -57,7 +57,13 @@ const styles = StyleSheet.create({
 
     coverview:{
         bottom:20
+    },
+
+    topic1:{
+        fontSize:22,
+        fontWeight:'bold'
     }
+    
 })
 
 export default HomeScreen;
