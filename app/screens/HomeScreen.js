@@ -12,7 +12,7 @@ function HomeScreen({navigation, route}) {
                     <TextInput style={styles.search} placeholder='Search here...'></TextInput>
                 </View>
 
-                <Text>Just For You</Text>
+                <Text style={styles.topic1}>Just For You</Text>
 
                 <View style={styles.coverview}>
                     <Image source={require('../assets/cover.png')}/>
