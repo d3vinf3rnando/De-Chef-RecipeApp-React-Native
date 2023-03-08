@@ -1,17 +1,21 @@
 import React from 'react';
 import { ImageBackground ,StyleSheet,View,Text,Button,TouchableOpacity} from 'react-native';
-
+import { useNavigation } from '@react-navigation/native';
 //this is a comment
 
 
 
 const AppButton = ({ onPress, title }) => (
-    <TouchableOpacity onPress={() => console.log('button clicked')} style={styles.appButtonContainer}>
+    <TouchableOpacity  style={styles.appButtonContainer}>
       <Text style={styles.appButtonText}>Get Started</Text>
     </TouchableOpacity>
   );
-function WelcomeScreen(props) {
+
+
+function WelcomeScreen({navigation}) {
     return (
+
+
         <ImageBackground style={styles.background} source={require('../assets/back.png')}>
 
             <View id='userNa' style={{alignItems:'center',top:'75%'}}>
@@ -22,7 +26,7 @@ function WelcomeScreen(props) {
                  recipe app designed for those who are new to cooking and want to try new 
                 recipes at home</Text>
 
-                <AppButton></AppButton>
+                <AppButton onPress={() => navigation.navigate('Home')}></AppButton>
 
                 {/*add navigation view */}
                 
