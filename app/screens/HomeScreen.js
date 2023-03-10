@@ -4,6 +4,8 @@ import { ImageBackground ,StyleSheet,View,Text,Button,TouchableOpacity,SafeAreaV
 function HomeScreen({navigation, route}) {
     return (
         <SafeAreaView>
+
+            //this is a test comment
             
                 <Text style={styles.head}>Discover Best{"\n"}Recipes</Text>
                 <Image style={styles.profile} source={require('../assets/PROFILE.png')} />
@@ -13,6 +15,8 @@ function HomeScreen({navigation, route}) {
                 </View>
 
                 <Text style={styles.topic1}>Just For You</Text>
+                <Text style={styles.head}>Discover Best{"\n"}Recipes</Text>
+
 
                 <View style={styles.coverview}>
                     <Image source={require('../assets/cover.png')}/>
@@ -37,7 +41,7 @@ const styles = StyleSheet.create({
     },
 
     profile: {
-        top:'-20%',
+        top:'-18%',
         left:'80%'
     },
 
@@ -51,17 +55,19 @@ const styles = StyleSheet.create({
     },
 
     searchview:{
-        paddingHorizontal:20,
+        paddingHorizontal:30,
         bottom:'10%'
     },
 
     coverview:{
-        bottom:20
+        bottom:"5%"
     },
 
     topic1:{
         fontSize:22,
-        fontWeight:'bold'
+        fontWeight:"600",
+        paddingLeft:30,
+        bottom:'5%'
     }
     
 })
