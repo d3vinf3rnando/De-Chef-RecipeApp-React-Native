@@ -24,6 +24,8 @@ function HomeScreen({navigation, route}) {
                      <Text style={styles.head}>Discover Best{"\n"}Recipes</Text>
                      <Text style={styles.head}>Discover Best{"\n"}Recipes</Text>
 <Text style={styles.head}>Discover Best{"\n"}Recipes</Text>
+
+//comment
                      
                                    
                                    
