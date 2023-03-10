@@ -22,6 +22,8 @@ function HomeScreen({navigation, route}) {
                     <Image source={require('../assets/cover.png')}/>
                     <Text>15 best pasta recipes from chef John</Text>
                      <Text style={styles.head}>Discover Best{"\n"}Recipes</Text>
+                     <Text style={styles.head}>Discover Best{"\n"}Recipes</Text>
+                     
                                    
                                    
                                    
