@@ -5,6 +5,8 @@ function HomeScreen({navigation, route}) {
     return (
         <SafeAreaView>
 
+            //screen update
+
             //this is a test comment
             
                 <Text style={styles.head}>Discover Best{"\n"}Recipes</Text>
