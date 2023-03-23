@@ -5,9 +5,7 @@ function HomeScreen({navigation, route}) {
     return (
         <SafeAreaView>
 
-            //screen update
-
-            //this is a test comment
+         
             
                 <Text style={styles.head}>Discover Best{"\n"}Recipes</Text>
                 <Image style={styles.profile} source={require('../assets/PROFILE.png')} />
@@ -17,21 +15,13 @@ function HomeScreen({navigation, route}) {
                 </View>
 
                 <Text style={styles.topic1}>Just For You</Text>
-                <Text style={styles.head}>Discover Best{"\n"}Recipes</Text>
+               
 
 
                 <View style={styles.coverview}>
                     <Image source={require('../assets/cover.png')}/>
                     <Text>15 best pasta recipes from chef John</Text>
-                     <Text style={styles.head}>Discover Best{"\n"}Recipes</Text>
-                     <Text style={styles.head}>Discover Best{"\n"}Recipes</Text>
-<Text style={styles.head}>Discover Best{"\n"}Recipes</Text>
-
-//comment
-                     
-                                   
-                                   
-                                   
+                                                    
                                    
                                    
                 </View>
@@ -73,7 +63,8 @@ const styles = StyleSheet.create({
     },
 
     coverview:{
-        bottom:"5%"
+        bottom:"5%",
+        flex:1
     },
 
     topic1:{
