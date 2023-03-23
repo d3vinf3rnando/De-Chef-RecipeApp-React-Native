@@ -20,14 +20,22 @@ function HomeScreen({navigation, route}) {
                 <Text style={styles.topic1}>Just For You</Text>
                
 
-
+                <TouchableOpacity>
                 <View style={styles.coverview}>
-                    <Image source={require('../assets/cover.png')}/>
+                    <Image  style={styles.cimg} source={require('../assets/cover.png')}/>
                     <Text style={styles.cardtext}>15 best pasta recipes from chef John</Text>
                                                     
                                    
                                    
                 </View>
+
+                </TouchableOpacity>
+
+
+              <View>
+                <Text style={styles.topic2}>Trending Recipes</Text>
+              </View>
+                
 
 
                 
@@ -69,10 +77,13 @@ const styles = StyleSheet.create({
     },
 
     coverview:{
+        paddingHorizontal:0
        
         
 
     },
+
+    cimg:{},
 
     cardtext:{
         fontSize:18,
@@ -89,6 +100,14 @@ const styles = StyleSheet.create({
         fontWeight:"600",
         paddingLeft:"7%",
         marginTop:"-4%",
+    },
+
+    topic2:{
+        fontSize:22,
+        fontWeight:"600",
+        paddingLeft:"7%",
+        marginTop:"10%"
+
     }
     
 })
