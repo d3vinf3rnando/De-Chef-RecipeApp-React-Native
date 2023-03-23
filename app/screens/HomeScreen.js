@@ -8,7 +8,10 @@ function HomeScreen({navigation, route}) {
          
             
                 <Text style={styles.head}>Discover Best{"\n"}Recipes</Text>
+                <TouchableOpacity>
                 <Image style={styles.profile} source={require('../assets/PROFILE.png')} />
+                </TouchableOpacity>
+                
 
                 <View style={styles.searchview}>
                     <TextInput style={styles.search} placeholder='Search here...'></TextInput>
@@ -20,7 +23,7 @@ function HomeScreen({navigation, route}) {
 
                 <View style={styles.coverview}>
                     <Image source={require('../assets/cover.png')}/>
-                    <Text>15 best pasta recipes from chef John</Text>
+                    <Text style={styles.cardtext}>15 best pasta recipes from chef John</Text>
                                                     
                                    
                                    
@@ -44,14 +47,17 @@ const styles = StyleSheet.create({
     },
 
     profile: {
-        top:'-18%',
-        left:'80%'
+        alignSelf:'flex-end',
+        marginTop:"-22%",
+        marginRight:"8%"
+        
     },
 
     search:{
         
         backgroundColor:'#EFEFEF',
         height:60,
+        marginTop:"15%",
         paddingLeft:20,
         borderRadius:15,
         
@@ -63,15 +69,26 @@ const styles = StyleSheet.create({
     },
 
     coverview:{
-        bottom:"5%",
-        flex:1
+       
+        
+
+    },
+
+    cardtext:{
+        fontSize:18,
+        fontWeight:600,
+        color:"white",
+        marginTop:"-25%",
+        marginLeft:"-15%",
+        paddingHorizontal:'27%',
+        
     },
 
     topic1:{
         fontSize:22,
         fontWeight:"600",
-        paddingLeft:30,
-        bottom:'5%'
+        paddingLeft:"7%",
+        marginTop:"-4%",
     }
     
 })
