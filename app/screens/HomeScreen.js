@@ -24,9 +24,7 @@ function HomeScreen({navigation, route}) {
                 <View style={styles.coverview}>
                     <Image  style={styles.cimg} source={require('../assets/cover.png')}/>
                     <Text style={styles.cardtext}>15 best pasta recipes from chef John</Text>
-                                                    
-                                   
-                                   
+                  
                 </View>
 
                 </TouchableOpacity>
@@ -78,8 +76,7 @@ const styles = StyleSheet.create({
 
     coverview:{
         paddingHorizontal:0
-       
-        
+  
 
     },
 
