@@ -9,6 +9,7 @@ function HomeScreen({navigation, route}) {
             
                 <Text style={styles.head}>Discover Best{"\n"}Recipes</Text>
                 <TouchableOpacity>
+                    {/* //comment updtated */}
                 <Image style={styles.profile} source={require('../assets/PROFILE.png')} />
                 </TouchableOpacity>
                 
