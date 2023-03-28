@@ -1,5 +1,6 @@
 import React from 'react';
 import { ImageBackground ,StyleSheet,View,Text,Button,TouchableOpacity,SafeAreaView, Image, TextInput,SearchBar} from 'react-native';
+import { BlurView } from "@react-native-community/blur";
 
 function HomeScreen({navigation, route}) {
     return (
@@ -34,6 +35,14 @@ function HomeScreen({navigation, route}) {
               <View>
                 <Text style={styles.topic2}>Trending Recipes</Text>
               </View>
+
+              <TouchableOpacity>
+                <View>
+                    <Image style={styles.pizzaimg}  source={require('../assets/pizza.png')}/>
+                    <Image style={styles.blurimg} source={require('../assets/blurimg.png')}/>
+                
+                </View>
+              </TouchableOpacity>
                 
 
 
@@ -106,6 +115,23 @@ const styles = StyleSheet.create({
         paddingLeft:"7%",
         marginTop:"10%"
 
+    },
+
+    pizzaimg:{
+        marginLeft:"7%",
+        marginTop:"5%"
+    },
+
+    blurbox:{
+        backgroundColor:"black",
+        width:186,
+        height:69,
+        borderRadius:8,
+        
+        
+    },
+    blurimg:{
+        top:"-10%"
     }
     
 })
