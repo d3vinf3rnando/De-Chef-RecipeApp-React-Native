@@ -40,6 +40,7 @@ function HomeScreen({navigation, route}) {
                 <View>
                     <Image style={styles.pizzaimg}  source={require('../assets/pizza.png')}/>
                     <Image style={styles.blurimg} source={require('../assets/blurimg.png')}/>
+                    <Text style={styles.Rtopic}>Tortilla Pizza Recipe</Text>
                 
                 </View>
               </TouchableOpacity>
@@ -131,7 +132,17 @@ const styles = StyleSheet.create({
         
     },
     blurimg:{
-        top:"-10%"
+        marginTop:"-20%",
+        marginLeft:"9%",
+        
+    },
+
+    Rtopic:{
+        color:"white",
+        fontSize:15,
+        fontWeight:"600",
+        marginTop:"-12%",
+        marginLeft:"13%",
     }
     
 })
