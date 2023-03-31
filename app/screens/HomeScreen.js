@@ -44,6 +44,8 @@ function HomeScreen({navigation, route}) {
                 
                 </View>
               </TouchableOpacity>
+
+              
                 
 
 
