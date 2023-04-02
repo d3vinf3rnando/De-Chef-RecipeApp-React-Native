@@ -2,6 +2,7 @@ import React from 'react';
 import { ImageBackground ,StyleSheet,View,Text,Button,TouchableOpacity,SafeAreaView, Image, TextInput,SearchBar} from 'react-native';
 import { BlurView } from "@react-native-community/blur";
 
+
 function HomeScreen({navigation, route}) {
     return (
         <SafeAreaView>
@@ -44,6 +45,8 @@ function HomeScreen({navigation, route}) {
                 
                 </View>
               </TouchableOpacity>
+
+             
 
               
                 
