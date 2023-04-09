@@ -7,13 +7,16 @@ function HomeScreen({navigation, route}) {
     return (
         <SafeAreaView>
 
-         
+                <View style={styles.r}>
+                    <Text style={styles.head}>Discover Best{"\n"}Recipes</Text>
+                    <TouchableOpacity>
+                       
+                    <Image style={styles.profile} source={require('../assets/PROFILE.png')} />
+                    </TouchableOpacity>
+
+                </View>
             
-                <Text style={styles.head}>Discover Best{"\n"}Recipes</Text>
-                <TouchableOpacity>
-                    {/* //comment updtated */}
-                <Image style={styles.profile} source={require('../assets/PROFILE.png')} />
-                </TouchableOpacity>
+                
                 
 
                 <View style={styles.searchview}>

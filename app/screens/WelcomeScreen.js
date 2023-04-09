@@ -20,7 +20,7 @@ function WelcomeScreen({navigation}) {
 
             <View id='userNa' style={{alignItems:'center',top:'75%'}}>
                 <Text style={styles.text}>Cook Like a Chef</Text>
-                {/* added the background image with texts for getting started screens */}
+                
 
                 <Text style={styles.para} >De Chef is a user-friendly
                  recipe app designed for those who are new to cooking and want to try new 
@@ -28,7 +28,6 @@ function WelcomeScreen({navigation}) {
 
                 <AppButton onPress={() => navigation.navigate('Home')}></AppButton>
 
-                {/*add navigation view */}
                 
             </View>
         </ImageBackground>
