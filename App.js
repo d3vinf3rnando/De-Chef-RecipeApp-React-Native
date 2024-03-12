@@ -5,7 +5,7 @@ import WelcomeScreen from './app/screens/WelcomeScreen';
 import RecipeOne from './app/screens/RecipeOne';
 
 export default function App() {
-  return (<RecipeOne/>)
+  return (<WelcomeScreen/>)
     
     
     

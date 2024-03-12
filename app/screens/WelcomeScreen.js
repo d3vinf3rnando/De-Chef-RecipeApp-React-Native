@@ -11,11 +11,8 @@ const AppButton = ({ onPress, title }) => (
     </TouchableOpacity>
   );
 
-
 function WelcomeScreen({navigation}) {
     return (
-
-
         <ImageBackground style={styles.background} source={require('../assets/back.png')}>
 
             <View id='userNa' style={{alignItems:'center',top:'75%'}}>
@@ -50,9 +47,10 @@ const styles = StyleSheet.create({
 
     para:{
         color:'white',
-        fontSize:12,
-        paddingHorizontal:70,
-        paddingBottom:40,
+        opacity:0.8,
+        fontSize:16,
+        paddingHorizontal:20,
+        paddingBottom:10,
         textAlign:'center',
         top:-20
     },
